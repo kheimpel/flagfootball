@@ -34,6 +34,18 @@
 
 **Brand preview:** See `brand-preview.html` in project root for the approved visual direction.
 
+### Design Principles — Anti-Generic
+
+The site must NOT feel like a generic AI-generated template. Concrete rules:
+
+- **Break the grid.** Not every section is a centered heading + 3 equal cards. Use asymmetric layouts, overlapping elements, full-bleed sections mixed with contained ones, varied card sizes.
+- **Editorial hierarchy.** Lead with bold typographic choices — oversized headlines, pull quotes, highlight numbers. The page should have visual rhythm, not a flat list of sections.
+- **Personality in micro-details.** Custom hover states, subtle animations on scroll (flag-pull motion?), hand-drawn or illustrative accents alongside the clean type. The small things signal "someone cares about this."
+- **Photography-first, not icon-first.** Real flag football imagery (or strong illustrative placeholders) over generic emoji/icon grids. Action shots, not stock photos.
+- **Opinionated layout per page.** Each page gets its own layout treatment suited to its content — the rules page reads differently from the equipment page. No one-size-fits-all template.
+- **German editorial references.** Draw inspiration from 11freunde.de (football culture magazine), kicker.de's feature layouts, and The Athletic — not from SaaS landing pages or corporate blogs.
+- **Dense where appropriate.** Don't over-space everything. A well-packed stats section or event listing feels more like a real sports site than a floating-card-in-whitespace look.
+
 ---
 
 ## Target Audience
