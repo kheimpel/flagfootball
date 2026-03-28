@@ -5,9 +5,9 @@ import { MdxContent } from "@/components/MdxContent";
 import { JsonLd } from "@/components/JsonLd";
 
 export const metadata: Metadata = {
-  title: "Flag Football Ausrüstung — Was du wirklich brauchst",
+  title: "Flag Football Ausrüstung — Was du wirklich brauchst (2026)",
   description:
-    "Flag Football Equipment Guide: Flag-Belts, Footballs, Schuhe und mehr. Was du zum Spielen brauchst und wo du es am besten kaufst.",
+    "Flag Football Equipment Guide: Flag-Belts, Footballs, Schuhe, Handschuhe und mehr. Mit konkreten Empfehlungen, Marken-Tipps und Kauflinks.",
   alternates: { canonical: "https://flagzone.de/ausruestung" },
 };
 
