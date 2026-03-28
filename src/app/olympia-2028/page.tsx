@@ -3,6 +3,7 @@ import Link from "next/link";
 import { JsonLd } from "@/components/JsonLd";
 import { getContentBySlug } from "@/lib/mdx";
 import { MdxContent } from "@/components/MdxContent";
+import { YouTubeEmbed } from "@/components/YouTubeEmbed";
 
 export const metadata: Metadata = {
   title: "Flag Football bei Olympia 2028 — Alles zur olympischen Premiere",
@@ -133,6 +134,27 @@ export default async function Olympia2028() {
                 <div className="text-muted text-sm mt-1">{item.note}</div>
               </div>
             ))}
+          </div>
+        </section>
+
+        {/* Videos */}
+        <section className="mb-16">
+          <h2 className="text-navy text-2xl md:text-3xl font-black tracking-tight mb-6">Videos</h2>
+          <div className="grid md:grid-cols-2 gap-6">
+            <div>
+              <YouTubeEmbed
+                videoId="OVjJXCy6NgE"
+                title="Vollmer: Flag Football soll bis 2028 olympisch sein"
+              />
+              <p className="text-muted text-sm mt-3">ran Sport — Sebastian Vollmer über Olympia</p>
+            </div>
+            <div>
+              <YouTubeEmbed
+                videoId="blLv1AcAL6k"
+                title="Die Finals Dresden 2025 — Flag Football Highlights"
+              />
+              <p className="text-muted text-sm mt-3">AFVD — Deutsche Meisterschaft 2025 Highlights</p>
+            </div>
           </div>
         </section>
 

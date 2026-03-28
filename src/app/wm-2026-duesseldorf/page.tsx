@@ -3,6 +3,7 @@ import Link from "next/link";
 import { JsonLd } from "@/components/JsonLd";
 import { getContentBySlug } from "@/lib/mdx";
 import { MdxContent } from "@/components/MdxContent";
+import { YouTubeEmbed } from "@/components/YouTubeEmbed";
 
 export const metadata: Metadata = {
   title: "Flag Football WM 2026 in Düsseldorf — Alles zur Weltmeisterschaft",
@@ -103,6 +104,27 @@ export default async function Wm2026Duesseldorf() {
                 <p className="text-muted text-sm leading-relaxed">{slot.description}</p>
               </div>
             ))}
+          </div>
+        </section>
+
+        {/* Videos */}
+        <section className="mb-16">
+          <h2 className="text-navy text-2xl md:text-3xl font-black tracking-tight mb-6">Videos</h2>
+          <div className="grid md:grid-cols-2 gap-6">
+            <div>
+              <YouTubeEmbed
+                videoId="vckwt2GKK98"
+                title="Düsseldorf ist Gastgeberin der Flag Football Weltmeisterschaft 2026"
+              />
+              <p className="text-muted text-sm mt-3">Stadt Düsseldorf — offizielle Ankündigung</p>
+            </div>
+            <div>
+              <YouTubeEmbed
+                videoId="blLv1AcAL6k"
+                title="Die Finals Dresden 2025 — Flag Football Highlights"
+              />
+              <p className="text-muted text-sm mt-3">AFVD — Die Finals 2025 Highlights</p>
+            </div>
           </div>
         </section>
 

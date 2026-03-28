@@ -3,6 +3,7 @@ import Link from "next/link";
 import { JsonLd } from "@/components/JsonLd";
 import { getContentBySlug } from "@/lib/mdx";
 import { MdxContent } from "@/components/MdxContent";
+import { YouTubeEmbed } from "@/components/YouTubeEmbed";
 
 export const metadata: Metadata = {
   title: "Was ist Flag Football? Regeln einfach erklärt",
@@ -92,6 +93,27 @@ export default async function WasIstFlagFootball() {
             Das Spielfeld ist 70 Yards lang und 25 Yards breit — deutlich kleiner als ein Tackle-Football-Feld.
             An beiden Enden liegen die Endzones (je 10 Yards). Die helleren Bereiche markieren die No-Run-Zones.
           </p>
+        </section>
+
+        {/* Video: Tutorial */}
+        <section className="mb-16">
+          <h2 className="text-navy text-2xl md:text-3xl font-black tracking-tight mb-6">Video-Tutorial</h2>
+          <div className="grid md:grid-cols-2 gap-6">
+            <div>
+              <YouTubeEmbed
+                videoId="RlIhXGzBCSU"
+                title="So spielst du (Flag) Football — Deutsches Tutorial der Carolina Panthers"
+              />
+              <p className="text-muted text-sm mt-3">Carolina Panthers — deutsches Tutorial (6 Min.)</p>
+            </div>
+            <div>
+              <YouTubeEmbed
+                videoId="-pJGuG9X-9o"
+                title="Flag Football Teil 1 — Was ist Flag Football? Einstieg in eine neue Sportart"
+              />
+              <p className="text-muted text-sm mt-3">Lehrer Heiß — ausführlicher Einstieg (12 Min.)</p>
+            </div>
+          </div>
         </section>
 
         {/* MDX content for positions and rules */}

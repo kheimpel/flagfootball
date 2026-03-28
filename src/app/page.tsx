@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { JsonLd } from "@/components/JsonLd";
+import { YouTubeEmbed } from "@/components/YouTubeEmbed";
 import eventsData from "@/data/events.json";
 
 function formatDateRange(start: string, end: string): string {
@@ -212,6 +213,33 @@ export default function Home() {
                 </span>
               </Link>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ── VIDEO: So funktioniert Flag Football ── */}
+      <section className="bg-white py-20">
+        <div className="max-w-7xl mx-auto px-6 lg:px-12">
+          <div className="grid lg:grid-cols-2 gap-10 items-center">
+            <div>
+              <p className="text-gold font-black text-xs uppercase tracking-widest mb-2">Video</p>
+              <h2 className="text-[#18181b] font-black text-3xl lg:text-4xl leading-tight mb-4">
+                Flag Football in 6 Minuten erklärt
+              </h2>
+              <p className="text-muted text-base leading-relaxed mb-6">
+                Die Carolina Panthers erklären auf Deutsch, wie Flag Football funktioniert — Regeln, Gameplay und warum der Sport so schnell wächst.
+              </p>
+              <Link
+                href="/was-ist-flag-football"
+                className="text-navy font-bold text-sm hover:text-gold-hover transition-colors"
+              >
+                Ausführlicher Regel-Guide →
+              </Link>
+            </div>
+            <YouTubeEmbed
+              videoId="RlIhXGzBCSU"
+              title="So spielst du (Flag) Football — Deutsches Tutorial der Carolina Panthers"
+            />
           </div>
         </div>
       </section>
