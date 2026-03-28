@@ -1,0 +1,29 @@
+[
+  {
+    "id": "finals-2026",
+    "title": "Die Finals — Deutsche Meisterschaft",
+    "dateStart": "2026-07-23",
+    "dateEnd": "2026-07-24",
+    "city": "Hannover",
+    "description": "DFFL & DFFLF Finale bei den Finals 2026",
+    "type": "national"
+  },
+  {
+    "id": "wm-2026",
+    "title": "IFAF Flag Football WM 2026",
+    "dateStart": "2026-08-13",
+    "dateEnd": "2026-08-16",
+    "city": "Düsseldorf",
+    "description": "32 Teams, 19 Nationen — die letzte große Bühne vor Olympia",
+    "type": "international"
+  },
+  {
+    "id": "olympia-2028",
+    "title": "Olympische Spiele Los Angeles",
+    "dateStart": "2028-07-14",
+    "dateEnd": "2028-07-30",
+    "city": "Los Angeles",
+    "description": "Flag Football Premiere — Herren & Damen",
+    "type": "international"
+  }
+]
