@@ -59,6 +59,12 @@ export default function Home() {
 
       {/* ── HERO ── */}
       <section className="relative bg-navy overflow-hidden min-h-[70vh] flex items-center">
+        {/* Background image */}
+        <div
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{ backgroundImage: "url('/dave-adamson--nATH0CrkMU-unsplash.jpg')" }}
+        />
+        <div className="absolute inset-0 bg-navy/80" />
         <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-12 py-16 grid lg:grid-cols-[1fr_auto] gap-12 items-center w-full">
           <div className="max-w-3xl">
             {/* badge */}
