@@ -67,27 +67,34 @@ export default async function WasIstFlagFootball() {
         {/* Field diagram */}
         <section className="mb-16">
           <h2 className="text-navy text-2xl md:text-3xl font-black font-headline tracking-tight mb-6">Das Spielfeld</h2>
-          <div className="bg-emerald-700 rounded-xl p-6 md:p-8 relative overflow-hidden mb-6">
-            <div className="flex">
-              <div className="w-[14%] border-2 border-dashed border-white/40 rounded-l-lg flex items-center justify-center min-h-[140px] md:min-h-[180px]">
-                <span className="text-white/60 text-xs font-bold uppercase tracking-wider [writing-mode:vertical-lr] rotate-180">Endzone</span>
+          <div className="bg-emerald-700 rounded-xl p-4 md:p-6 relative overflow-hidden mb-6">
+            {/* Field container: 90 yards long × 25 yards wide = 3.6:1 ratio */}
+            <div className="flex" style={{ aspectRatio: "90 / 25" }}>
+              {/* Left endzone: 10/90 = 11.1% */}
+              <div className="w-[11.1%] border-2 border-dashed border-white/40 rounded-l-lg flex items-center justify-center">
+                <span className="text-white/60 text-[10px] md:text-xs font-bold uppercase tracking-wider [writing-mode:vertical-lr] rotate-180">Endzone</span>
               </div>
+              {/* Playing field: 70/90 = 77.8% */}
               <div className="flex-1 border-y-2 border-white/40 relative">
+                {/* Midfield line */}
                 <div className="absolute left-1/2 top-0 bottom-0 border-l-2 border-dashed border-white/40" />
-                <div className="absolute left-[8%] top-0 bottom-0 w-[12%] bg-white/10" />
-                <div className="absolute right-[8%] top-0 bottom-0 w-[12%] bg-white/10" />
-                <div className="flex items-center justify-center h-full min-h-[140px] md:min-h-[180px]">
+                {/* No-run zones: 5 yards from each endzone = ~7.1% from each edge of playing field */}
+                <div className="absolute left-0 top-0 bottom-0 w-[7.1%] bg-white/10" />
+                <div className="absolute right-0 top-0 bottom-0 w-[7.1%] bg-white/10" />
+                {/* Center label */}
+                <div className="flex items-center justify-center h-full">
                   <div className="text-center">
-                    <div className="text-white font-bold text-base md:text-lg">70 Yards</div>
-                    <div className="text-white/40 text-xs mt-1">+ 2×10 Yard Endzones</div>
+                    <div className="text-white font-bold text-sm md:text-lg">70 Yards</div>
+                    <div className="text-white/40 text-[10px] md:text-xs mt-0.5">+ 2×10 Yard Endzones</div>
                   </div>
                 </div>
               </div>
-              <div className="w-[14%] border-2 border-dashed border-white/40 rounded-r-lg flex items-center justify-center">
-                <span className="text-white/60 text-xs font-bold uppercase tracking-wider [writing-mode:vertical-lr]">Endzone</span>
+              {/* Right endzone: 10/90 = 11.1% */}
+              <div className="w-[11.1%] border-2 border-dashed border-white/40 rounded-r-lg flex items-center justify-center">
+                <span className="text-white/60 text-[10px] md:text-xs font-bold uppercase tracking-wider [writing-mode:vertical-lr]">Endzone</span>
               </div>
             </div>
-            <div className="text-center text-white/40 text-xs mt-3">25 Yards breit</div>
+            <div className="text-center text-white/40 text-xs mt-2">25 Yards breit</div>
           </div>
           <p className="text-muted text-base leading-relaxed max-w-3xl">
             Das Spielfeld ist 70 Yards lang und 25 Yards breit — deutlich kleiner als ein Tackle-Football-Feld.
