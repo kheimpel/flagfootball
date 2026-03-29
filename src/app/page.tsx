@@ -64,8 +64,8 @@ export default function Home() {
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{ backgroundImage: "url('/dave-adamson--nATH0CrkMU-unsplash.jpg')" }}
         />
-        <div className="absolute inset-0 bg-navy/80" />
-        <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-12 py-16 grid lg:grid-cols-[1fr_auto] gap-12 items-center w-full">
+        <div className="absolute inset-0 bg-navy/70" />
+        <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-12 py-16 w-full">
           <div className="max-w-3xl">
             {/* badge */}
             <span className="inline-flex items-center gap-2 border border-gold/40 text-gold text-xs font-bold uppercase tracking-widest px-3 py-1.5 rounded-full mb-8">
@@ -102,14 +102,6 @@ export default function Home() {
             </div>
           </div>
 
-          {/* side decoration */}
-          <div className="hidden lg:flex flex-col gap-3 text-right">
-            {["Offensiv", "Defensiv", "Special Teams"].map((label) => (
-              <span key={label} className="text-white/20 font-black text-5xl leading-none select-none">
-                {label}
-              </span>
-            ))}
-          </div>
         </div>
       </section>
 
