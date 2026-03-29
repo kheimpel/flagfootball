@@ -14,7 +14,7 @@ export default function Datenschutz() {
       <div className="space-y-6 text-muted leading-relaxed">
         <section>
           <h2 className="text-navy text-xl font-bold mb-2">1. Verantwortlicher</h2>
-          <p>Verantwortlich für die Datenverarbeitung auf dieser Website ist:<br />[Vorname Nachname]<br />[Adresse]<br />E-Mail: info@flagzone.de</p>
+          <p>Verantwortlich für die Datenverarbeitung auf dieser Website ist:<br />Konrad Heimpel<br />Fritz-Salm-Straße 17, 68167 Mannheim<br />E-Mail: kontakt@flagzone.de</p>
         </section>
         <section>
           <h2 className="text-navy text-xl font-bold mb-2">2. Hosting</h2>
@@ -30,7 +30,7 @@ export default function Datenschutz() {
         </section>
         <section>
           <h2 className="text-navy text-xl font-bold mb-2">5. Deine Rechte</h2>
-          <p>Du hast das Recht auf Auskunft, Berichtigung, Löschung und Einschränkung der Verarbeitung deiner Daten sowie das Recht auf Datenübertragbarkeit. Bei Fragen wende dich an info@flagzone.de.</p>
+          <p>Du hast das Recht auf Auskunft, Berichtigung, Löschung und Einschränkung der Verarbeitung deiner Daten sowie das Recht auf Datenübertragbarkeit. Bei Fragen wende dich an kontakt@flagzone.de.</p>
         </section>
         <section>
           <h2 className="text-navy text-xl font-bold mb-2">6. Externe Schriftarten</h2>

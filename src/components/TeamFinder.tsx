@@ -161,7 +161,7 @@ export function TeamFinder({ teams }: { teams: Team[] }) {
         <p className="text-muted text-sm text-center mt-14">
           Dein Team fehlt?{" "}
           <a
-            href="mailto:hallo@flagzone.de?subject=Team%20eintragen"
+            href="mailto:kontakt@flagzone.de?subject=Team%20eintragen"
             className="text-navy font-bold hover:text-gold transition-colors duration-150 underline underline-offset-2 decoration-gold/50"
           >
             Schreib uns

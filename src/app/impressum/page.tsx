@@ -14,15 +14,15 @@ export default function Impressum() {
       <div className="space-y-6 text-muted leading-relaxed">
         <section>
           <h2 className="text-navy text-xl font-bold mb-2">Angaben gemäß § 5 TMG</h2>
-          <p>[Vorname Nachname]<br />[Straße Hausnummer]<br />[PLZ Ort]<br />Deutschland</p>
+          <p>Konrad Heimpel<br />Fritz-Salm-Straße 17<br />68167 Mannheim<br />Deutschland</p>
         </section>
         <section>
           <h2 className="text-navy text-xl font-bold mb-2">Kontakt</h2>
-          <p>E-Mail: info@flagzone.de</p>
+          <p>E-Mail: kontakt@flagzone.de</p>
         </section>
         <section>
           <h2 className="text-navy text-xl font-bold mb-2">Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV</h2>
-          <p>[Vorname Nachname]<br />[Adresse wie oben]</p>
+          <p>Konrad Heimpel<br />Fritz-Salm-Straße 17<br />68167 Mannheim</p>
         </section>
         <section>
           <h2 className="text-navy text-xl font-bold mb-2">Haftungsausschluss</h2>
