@@ -39,7 +39,7 @@ export default async function WasIstFlagFootball() {
       <section className="bg-navy">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 py-14 md:py-20">
           <p className="text-gold text-xs font-bold uppercase tracking-widest mb-3">Regeln & Grundlagen</p>
-          <h1 className="text-white text-4xl sm:text-5xl md:text-6xl font-black leading-[0.95] tracking-tight max-w-2xl">
+          <h1 className="text-white text-4xl sm:text-5xl md:text-6xl font-black font-headline leading-[0.95] tracking-tight max-w-2xl">
             Was ist Flag Football?
           </h1>
           <p className="text-white/50 text-lg mt-4 max-w-xl">
@@ -66,7 +66,7 @@ export default async function WasIstFlagFootball() {
 
         {/* Field diagram */}
         <section className="mb-16">
-          <h2 className="text-navy text-2xl md:text-3xl font-black tracking-tight mb-6">Das Spielfeld</h2>
+          <h2 className="text-navy text-2xl md:text-3xl font-black font-headline tracking-tight mb-6">Das Spielfeld</h2>
           <div className="bg-emerald-700 rounded-xl p-6 md:p-8 relative overflow-hidden mb-6">
             <div className="flex">
               <div className="w-[14%] border-2 border-dashed border-white/40 rounded-l-lg flex items-center justify-center min-h-[140px] md:min-h-[180px]">
@@ -97,7 +97,7 @@ export default async function WasIstFlagFootball() {
 
         {/* Video: Tutorial */}
         <section className="mb-16">
-          <h2 className="text-navy text-2xl md:text-3xl font-black tracking-tight mb-6">Video-Tutorial</h2>
+          <h2 className="text-navy text-2xl md:text-3xl font-black font-headline tracking-tight mb-6">Video-Tutorial</h2>
           <div className="grid md:grid-cols-2 gap-6">
             <div>
               <YouTubeEmbed
@@ -117,13 +117,13 @@ export default async function WasIstFlagFootball() {
         </section>
 
         {/* MDX content for positions and rules */}
-        <div className="prose prose-zinc max-w-3xl prose-headings:text-navy prose-headings:font-black prose-headings:tracking-tight prose-h2:text-2xl prose-h2:md:text-3xl prose-h3:text-lg prose-h3:font-bold prose-strong:text-navy prose-a:text-navy prose-a:underline prose-a:decoration-gold prose-a:decoration-2 prose-a:underline-offset-2 hover:prose-a:text-gold-hover mb-16">
+        <div className="prose prose-zinc max-w-3xl prose-headings:text-navy prose-headings:font-black prose-headings:font-headline prose-headings:tracking-tight prose-h2:text-2xl prose-h2:md:text-3xl prose-h3:text-lg prose-h3:font-bold prose-strong:text-navy prose-a:text-navy prose-a:underline prose-a:decoration-gold prose-a:decoration-2 prose-a:underline-offset-2 hover:prose-a:text-gold-hover mb-16">
           <MdxContent source={mdxSource} />
         </div>
 
         {/* FAQ */}
         <section className="mb-16">
-          <h2 className="text-navy text-2xl md:text-3xl font-black tracking-tight mb-6">Häufige Fragen</h2>
+          <h2 className="text-navy text-2xl md:text-3xl font-black font-headline tracking-tight mb-6">Häufige Fragen</h2>
           <div className="max-w-3xl divide-y divide-zinc-200">
             {FAQ_ITEMS.map((item) => (
               <details key={item.q} className="py-4 group">
@@ -139,7 +139,7 @@ export default async function WasIstFlagFootball() {
 
         {/* CTA */}
         <section className="bg-navy rounded-xl p-8 md:p-12 text-center">
-          <h2 className="text-white text-2xl md:text-3xl font-black mb-3">Bereit loszulegen?</h2>
+          <h2 className="text-white text-2xl md:text-3xl font-black font-headline mb-3">Bereit loszulegen?</h2>
           <p className="text-white/50 mb-6 max-w-md mx-auto">
             Finde ein Team in deiner Nähe oder schau dir an, welche Ausrüstung du brauchst.
           </p>

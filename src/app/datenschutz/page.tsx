@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 export default function Datenschutz() {
   return (
     <main className="max-w-3xl mx-auto px-4 sm:px-6 py-12 md:py-16">
-      <h1 className="text-navy text-3xl font-black tracking-tight mb-8">Datenschutzerklärung</h1>
+      <h1 className="text-navy text-3xl font-black font-headline tracking-tight mb-8">Datenschutzerklärung</h1>
       <div className="space-y-6 text-muted leading-relaxed">
         <section>
           <h2 className="text-navy text-xl font-bold mb-2">1. Verantwortlicher</h2>

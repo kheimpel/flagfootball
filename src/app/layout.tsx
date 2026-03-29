@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
 import { Nav } from "@/components/Nav";
+import { EventTicker } from "@/components/EventTicker";
 import { Footer } from "@/components/Footer";
 import { Analytics } from "@vercel/analytics/react";
+import eventsData from "@/data/events.json";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -34,6 +36,7 @@ export default function RootLayout({
     <html lang="de">
       <body className="min-h-screen flex flex-col">
         <Nav />
+        <EventTicker events={eventsData} />
         {children}
         <Footer />
         <Analytics />

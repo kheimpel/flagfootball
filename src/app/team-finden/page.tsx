@@ -18,7 +18,7 @@ export default function TeamFindenPage() {
           <p className="text-gold text-xs font-bold uppercase tracking-widest mb-3">
             Community
           </p>
-          <h1 className="text-gold text-4xl sm:text-5xl md:text-6xl font-black leading-[0.95] tracking-tight max-w-2xl">
+          <h1 className="text-gold text-4xl sm:text-5xl md:text-6xl font-black font-headline leading-[0.95] tracking-tight max-w-2xl">
             Finde ein Team in deiner Nähe
           </h1>
           <p className="text-white/50 text-lg mt-4 max-w-xl">

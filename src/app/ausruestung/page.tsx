@@ -107,7 +107,7 @@ export default async function AusruestungPage() {
           <p className="text-gold text-xs font-bold uppercase tracking-widest mb-3">
             Equipment Guide
           </p>
-          <h1 className="text-gold text-4xl sm:text-5xl md:text-6xl font-black leading-[0.95] tracking-tight max-w-2xl">
+          <h1 className="text-gold text-4xl sm:text-5xl md:text-6xl font-black font-headline leading-[0.95] tracking-tight max-w-2xl">
             Was brauchst du zum Spielen?
           </h1>
           <p className="text-white/50 text-lg mt-4 max-w-xl">Spoiler: Nicht viel.</p>
@@ -117,7 +117,7 @@ export default async function AusruestungPage() {
       <article className="max-w-6xl mx-auto px-4 sm:px-6 py-12 md:py-16">
 
         {/* MDX intro */}
-        <div className="prose prose-zinc max-w-3xl prose-headings:text-navy prose-headings:font-black prose-headings:tracking-tight prose-strong:text-navy prose-a:text-navy prose-a:underline prose-a:decoration-gold prose-a:decoration-2 prose-a:underline-offset-2 hover:prose-a:text-gold-hover mb-12">
+        <div className="prose prose-zinc max-w-3xl prose-headings:text-navy prose-headings:font-black prose-headings:font-headline prose-headings:tracking-tight prose-strong:text-navy prose-a:text-navy prose-a:underline prose-a:decoration-gold prose-a:decoration-2 prose-a:underline-offset-2 hover:prose-a:text-gold-hover mb-12">
           <MdxContent source={mdxSource} />
         </div>
 
@@ -166,7 +166,7 @@ export default async function AusruestungPage() {
 
         {/* Pricing summary */}
         <section className="bg-navy rounded-xl p-8 md:p-10 mb-16">
-          <h2 className="text-white text-xl md:text-2xl font-black mb-6">Kosten im Überblick</h2>
+          <h2 className="text-white text-xl md:text-2xl font-black font-headline mb-6">Kosten im Überblick</h2>
           <div className="grid sm:grid-cols-2 gap-6">
             <div className="border-l-4 border-gold pl-5">
               <div className="text-gold text-3xl font-black tracking-tight">0–30 EUR</div>
@@ -185,7 +185,7 @@ export default async function AusruestungPage() {
 
         {/* CTA */}
         <section className="text-center">
-          <h2 className="text-navy text-2xl md:text-3xl font-black mb-3">
+          <h2 className="text-navy text-2xl md:text-3xl font-black font-headline mb-3">
             Bereit loszulegen?
           </h2>
           <p className="text-muted mb-6 max-w-md mx-auto">

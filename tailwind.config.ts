@@ -12,6 +12,7 @@ const config: Config = {
       },
       fontFamily: {
         sans: ["Inter", "system-ui", "-apple-system", "sans-serif"],
+        headline: ["Playfair Display", "Georgia", "Times New Roman", "serif"],
       },
     },
   },

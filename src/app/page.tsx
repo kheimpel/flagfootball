@@ -22,6 +22,7 @@ const articles = [
     title: "Die Grundregeln des Flag Footballs — alles, was du wissen musst",
     description: "Downs, Scoring, Rushing Passer: Wir erklären, wie das Spiel funktioniert — ohne Ausrüstung, ohne Tackling.",
     readTime: "5 Min.",
+    date: "28. März 2026",
     href: "/was-ist-flag-football",
   },
   {
@@ -29,6 +30,7 @@ const articles = [
     title: "IFAF WM 2026 in Düsseldorf: Deutschland als Gastgeber",
     description: "32 Teams, 19 Nationen — die letzte große Bühne vor den Olympischen Spielen 2028. Was du wissen musst.",
     readTime: "4 Min.",
+    date: "28. März 2026",
     href: "/wm-2026-duesseldorf",
   },
   {
@@ -36,6 +38,7 @@ const articles = [
     title: "Ausrüstung für Flag Football: Was brauchst du wirklich?",
     description: "Flag-Gürtel, Cleats, Handschuhe — oder doch nur Sneaker? Unser Einsteigerguide für alle Budgets.",
     readTime: "6 Min.",
+    date: "28. März 2026",
     href: "/ausruestung",
   },
 ];
@@ -55,20 +58,8 @@ export default function Home() {
       />
 
       {/* ── HERO ── */}
-      <section className="relative bg-navy overflow-hidden min-h-[85vh] flex items-center">
-        {/* decorative blurs */}
-        <div
-          aria-hidden
-          className="absolute -top-32 -left-32 w-[500px] h-[500px] rounded-full opacity-20"
-          style={{ background: "radial-gradient(circle, #FFC72C 0%, transparent 70%)" }}
-        />
-        <div
-          aria-hidden
-          className="absolute bottom-0 right-0 w-[600px] h-[400px] rounded-full opacity-10"
-          style={{ background: "radial-gradient(circle, #0a3a6b 0%, transparent 70%)" }}
-        />
-
-        <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-12 py-24 grid lg:grid-cols-[1fr_auto] gap-12 items-center w-full">
+      <section className="relative bg-navy overflow-hidden min-h-[70vh] flex items-center">
+        <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-12 py-16 grid lg:grid-cols-[1fr_auto] gap-12 items-center w-full">
           <div className="max-w-3xl">
             {/* badge */}
             <span className="inline-flex items-center gap-2 border border-gold/40 text-gold text-xs font-bold uppercase tracking-widest px-3 py-1.5 rounded-full mb-8">
@@ -77,7 +68,7 @@ export default function Home() {
             </span>
 
             <h1
-              className="text-gold leading-[0.92] font-black mb-6"
+              className="text-gold leading-[0.92] font-black font-headline mb-6"
               style={{ fontSize: "clamp(3rem, 7vw, 6rem)" }}
             >
               Flag Football<br />
@@ -140,11 +131,11 @@ export default function Home() {
       </section>
 
       {/* ── CONTENT CARDS (mixed grid) ── */}
-      <section className="bg-bg py-20">
+      <section className="bg-bg py-14">
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
-          <div className="mb-10">
+          <div className="mb-8">
             <p className="text-gold font-black text-xs uppercase tracking-widest mb-2">Einsteiger</p>
-            <h2 className="text-[#18181b] font-black text-4xl lg:text-5xl leading-tight">
+            <h2 className="text-[#18181b] font-black font-headline text-4xl lg:text-5xl leading-tight">
               Dein Weg<br />auf den Platz.
             </h2>
           </div>
@@ -156,11 +147,6 @@ export default function Home() {
               href="/was-ist-flag-football"
               className="group lg:col-span-3 bg-navy rounded-2xl p-10 flex flex-col justify-between min-h-[400px] relative overflow-hidden hover:ring-2 hover:ring-gold/40 transition-all duration-200"
             >
-              <div
-                aria-hidden
-                className="absolute top-0 right-0 w-64 h-64 rounded-full opacity-10"
-                style={{ background: "radial-gradient(circle, #FFC72C 0%, transparent 70%)" }}
-              />
               <div>
                 <span className="inline-block bg-gold text-navy text-xs font-black uppercase tracking-widest px-3 py-1 rounded-full mb-6">
                   Grundlagen
@@ -218,12 +204,16 @@ export default function Home() {
       </section>
 
       {/* ── VIDEO: So funktioniert Flag Football ── */}
-      <section className="bg-white py-20">
+      <section className="bg-white py-14">
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
           <div className="grid lg:grid-cols-2 gap-10 items-center">
+            <YouTubeEmbed
+              videoId="RlIhXGzBCSU"
+              title="So spielst du (Flag) Football — Deutsches Tutorial der Carolina Panthers"
+            />
             <div>
               <p className="text-gold font-black text-xs uppercase tracking-widest mb-2">Video</p>
-              <h2 className="text-[#18181b] font-black text-3xl lg:text-4xl leading-tight mb-4">
+              <h2 className="text-[#18181b] font-black font-headline text-3xl lg:text-4xl leading-tight mb-4">
                 Flag Football in 6 Minuten erklärt
               </h2>
               <p className="text-muted text-base leading-relaxed mb-6">
@@ -236,21 +226,17 @@ export default function Home() {
                 Ausführlicher Regel-Guide →
               </Link>
             </div>
-            <YouTubeEmbed
-              videoId="RlIhXGzBCSU"
-              title="So spielst du (Flag) Football — Deutsches Tutorial der Carolina Panthers"
-            />
           </div>
         </div>
       </section>
 
       {/* ── EVENTS ── */}
-      <section className="bg-navy py-20">
-        <div className="max-w-7xl mx-auto px-6 lg:px-12 grid lg:grid-cols-2 gap-14 items-start">
+      <section className="bg-navy py-14">
+        <div className="max-w-7xl mx-auto px-6 lg:px-12 grid lg:grid-cols-2 gap-10 items-start">
           {/* Left: heading */}
           <div className="lg:sticky lg:top-24">
             <p className="text-gold font-black text-xs uppercase tracking-widest mb-4">Termine</p>
-            <h2 className="text-white font-black text-4xl lg:text-5xl leading-tight mb-6">
+            <h2 className="text-white font-black font-headline text-4xl lg:text-5xl leading-tight mb-6">
               2026 wird das<br />
               <span className="text-gold">Jahr des Flag</span><br />
               Footballs.
@@ -295,21 +281,12 @@ export default function Home() {
       </section>
 
       {/* ── ARTICLE TEASERS ── */}
-      <section className="bg-bg-warm py-20">
+      <section className="bg-bg-warm py-14">
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
-          <div className="flex items-end justify-between mb-10">
-            <div>
-              <p className="text-gold font-black text-xs uppercase tracking-widest mb-2">Magazin</p>
-              <h2 className="text-[#18181b] font-black text-3xl lg:text-4xl">
-                Lies dich rein.
-              </h2>
-            </div>
-            <Link
-              href="/magazine"
-              className="hidden lg:inline-flex text-muted text-sm font-bold hover:text-[#18181b] transition-colors duration-150"
-            >
-              Alle Artikel →
-            </Link>
+          <div className="mb-8">
+            <h2 className="text-[#18181b] font-black font-headline text-3xl lg:text-4xl">
+              Lies dich rein.
+            </h2>
           </div>
 
           <div className="flex flex-col gap-5">
@@ -320,8 +297,14 @@ export default function Home() {
                 className="group bg-white border border-zinc-200 rounded-2xl p-6 flex gap-6 items-center hover:shadow-xl hover:shadow-zinc-900/5 hover:border-zinc-300 transition-all duration-200"
               >
                 {/* thumbnail */}
-                <div className="shrink-0 w-20 h-20 lg:w-28 lg:h-28 rounded-xl bg-gradient-to-br from-navy to-navy-light flex items-center justify-center text-3xl">
-                  🏈
+                <div className={`shrink-0 w-20 h-20 lg:w-28 lg:h-28 rounded-lg flex items-center justify-center ${
+                  article.tag === "Regeln" ? "bg-navy" : article.tag === "WM 2026" ? "bg-gold" : "bg-navy-light"
+                }`}>
+                  <span className={`text-2xl lg:text-3xl font-headline font-black ${
+                    article.tag === "WM 2026" ? "text-navy" : "text-white"
+                  }`}>
+                    {article.tag.charAt(0)}
+                  </span>
                 </div>
 
                 {/* text */}
@@ -336,7 +319,7 @@ export default function Home() {
                     {article.description}
                   </p>
                   <span className="text-muted text-xs font-bold uppercase tracking-wide">
-                    {article.readTime} Lesezeit
+                    {article.date} · {article.readTime} Lesezeit
                   </span>
                 </div>
 
@@ -348,12 +331,6 @@ export default function Home() {
                 </span>
               </Link>
             ))}
-          </div>
-
-          <div className="mt-8 lg:hidden text-center">
-            <Link href="/magazine" className="text-muted text-sm font-bold hover:text-[#18181b]">
-              Alle Artikel →
-            </Link>
           </div>
         </div>
       </section>

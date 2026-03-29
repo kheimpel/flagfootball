@@ -46,7 +46,7 @@ export default async function Wm2026Duesseldorf() {
       <section className="bg-navy">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 py-14 md:py-20">
           <p className="text-gold text-xs font-bold uppercase tracking-widest mb-3">13.–16. August 2026</p>
-          <h1 className="text-gold text-4xl sm:text-5xl md:text-6xl font-black leading-[0.95] tracking-tight max-w-2xl">
+          <h1 className="text-gold text-4xl sm:text-5xl md:text-6xl font-black font-headline leading-[0.95] tracking-tight max-w-2xl">
             Flag Football WM 2026 in Düsseldorf
           </h1>
           <p className="text-white/50 text-lg mt-4 max-w-xl">
@@ -74,7 +74,7 @@ export default async function Wm2026Duesseldorf() {
 
         {/* Schedule */}
         <section className="mb-16">
-          <h2 className="text-navy text-2xl md:text-3xl font-black tracking-tight mb-6">Spielplan</h2>
+          <h2 className="text-navy text-2xl md:text-3xl font-black font-headline tracking-tight mb-6">Spielplan</h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
             {[
               {
@@ -109,7 +109,7 @@ export default async function Wm2026Duesseldorf() {
 
         {/* Videos */}
         <section className="mb-16">
-          <h2 className="text-navy text-2xl md:text-3xl font-black tracking-tight mb-6">Videos</h2>
+          <h2 className="text-navy text-2xl md:text-3xl font-black font-headline tracking-tight mb-6">Videos</h2>
           <div className="grid md:grid-cols-2 gap-6">
             <div>
               <YouTubeEmbed
@@ -129,13 +129,13 @@ export default async function Wm2026Duesseldorf() {
         </section>
 
         {/* MDX content */}
-        <div className="prose prose-zinc max-w-3xl prose-headings:text-navy prose-headings:font-black prose-headings:tracking-tight prose-h2:text-2xl prose-h2:md:text-3xl prose-h3:text-lg prose-h3:font-bold prose-strong:text-navy prose-a:text-navy prose-a:underline prose-a:decoration-gold prose-a:decoration-2 prose-a:underline-offset-2 hover:prose-a:text-gold-hover mb-16">
+        <div className="prose prose-zinc max-w-3xl prose-headings:text-navy prose-headings:font-black prose-headings:font-headline prose-headings:tracking-tight prose-h2:text-2xl prose-h2:md:text-3xl prose-h3:text-lg prose-h3:font-bold prose-strong:text-navy prose-a:text-navy prose-a:underline prose-a:decoration-gold prose-a:decoration-2 prose-a:underline-offset-2 hover:prose-a:text-gold-hover mb-16">
           <MdxContent source={mdxSource} />
         </div>
 
         {/* CTA */}
         <section className="bg-navy rounded-xl p-8 md:p-12 text-center">
-          <h2 className="text-white text-2xl md:text-3xl font-black mb-3">Neu im Flag Football?</h2>
+          <h2 className="text-white text-2xl md:text-3xl font-black font-headline mb-3">Neu im Flag Football?</h2>
           <p className="text-white/50 mb-6 max-w-md mx-auto">
             Lern die Grundlagen des Sports kennen — Regeln, Positionen und alles für den Einstieg.
           </p>

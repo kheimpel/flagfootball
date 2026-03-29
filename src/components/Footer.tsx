@@ -51,7 +51,7 @@ export function Footer() {
           </div>
         </div>
         <div className="mt-10 pt-6 border-t border-white/10 text-xs text-center">
-          &copy; {new Date().getFullYear()} FlagZone. Made with 🏈 in Deutschland.
+          &copy; {new Date().getFullYear()} FlagZone — Flag Football in Deutschland.
         </div>
       </div>
     </footer>
